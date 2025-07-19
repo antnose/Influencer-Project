@@ -22,7 +22,7 @@ body {
 }
 
 .universal_padding_margin {
-  max-width: 90%;
+  max-width: 70%;
   margin: 0 auto;
 }
 
@@ -88,5 +88,78 @@ body {
   }
   .nav ul {
     display: none;
+  }
+}
+
+/* Hero Section Style */
+.hero {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero_title_section {
+  width: 582px;
+  height: 270px;
+}
+
+.hero_title_section_title {
+  font-size: 3.25rem;
+  font-weight: 700;
+  color: var(--primary_font_color);
+}
+
+.hero_title_sectioN_description {
+  color: var(--primary_font_color);
+  font-weight: 600;
+}
+
+.hero_title_sectioN_button {
+  margin-top: 16px;
+  padding: 10px 24px;
+  border-radius: 41px;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  background-color: #e02c6d;
+  cursor: pointer;
+}
+
+.hero_img_section {
+  background-image: url(./images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.hero_main_img {
+  max-width: 440px;
+  height: 414px;
+}
+
+/* hero section responsive design */
+@media screen and (max-width: 576px) {
+  .hero {
+    max-width: 100%;
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .hero_img_section {
+    width: 90%;
+  }
+
+  .hero_title_section {
+    width: 100%;
+  }
+
+  .hero_title_section_title {
+    font-size: 2rem;
+  }
+
+  .hero_main_img {
+    width: 100%;
   }
 }
