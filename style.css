@@ -30,17 +30,24 @@ body {
   padding-top: 35px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
 
 .for_mobile {
   display: none;
 }
 
+.title_div {
+  display: flex;
+  align-items: start;
+  text-align: left;
+}
+
 .nav p {
   color: var(--primary_font_color);
   font-size: 1.5rem;
   font-weight: 700;
+  text-align: left;
 }
 
 .nav ul {
