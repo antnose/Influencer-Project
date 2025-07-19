@@ -9,6 +9,7 @@
 
 :root {
   --primary_font_color: #3a3a3a;
+  --card_title_font_color: #18191f;
 }
 
 * {
@@ -186,4 +187,52 @@ body {
     grid-column: 1 / -1;
     justify-self: center;
   }
+}
+
+/* Card Section CSS */
+
+.collection_heading {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--primary_font_color);
+  text-align: center;
+  margin: 35px 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+.card {
+  max-width: 329px;
+  padding: 17px 15px;
+  box-shadow: 0px 0px 40px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.inner_card {
+  padding: 17px 15px;
+}
+
+.card_img {
+  width: 100%;
+}
+
+.card_title {
+  font-size: 28px;
+  color: var(--card_title_font_color);
+}
+
+.product_price {
+  margin-top: 6px;
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 6px;
+}
+
+.card_details {
+  color: #787885;
 }
