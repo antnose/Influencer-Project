@@ -163,3 +163,27 @@ body {
     width: 100%;
   }
 }
+
+/* Sponsors Section  */
+.sponsors {
+  margin-top: 75px;
+  border-top: 1px solid #f3e9dc;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 20px;
+  align-items: center;
+  justify-items: center;
+  border-bottom: 1px solid #f3e9dc;
+}
+
+/* Responsive sponsors section */
+@media screen and (max-width: 576px) {
+  .sponsors {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .sponsors :last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
