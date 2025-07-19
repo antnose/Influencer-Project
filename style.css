@@ -236,3 +236,9 @@ body {
 .card_details {
   color: #787885;
 }
+
+@media screen and (max-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
