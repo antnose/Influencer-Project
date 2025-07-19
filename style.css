@@ -10,6 +10,7 @@
 :root {
   --primary_font_color: #3a3a3a;
   --card_title_font_color: #18191f;
+  --footer_bg_color: #0a0826;
 }
 
 * {
@@ -244,6 +245,7 @@ body {
 }
 
 .features_products {
+  width: 100%;
   margin-top: 70px;
   display: flex;
   align-items: center;
@@ -265,4 +267,22 @@ body {
   border: none;
   background-color: #e02c6d;
   cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .features_products {
+    flex-direction: column;
+  }
+  .last_img_div {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .img_img_img {
+    max-width: 90%;
+  }
+
+  .text_section {
+    width: 95%;
+  }
 }
